@@ -11,6 +11,7 @@
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const finish = () => {
+      document.getElementById("body-wrap").classList.add("loaded");
       preloader.remove();
       document.documentElement.classList.remove('preload-lock');
     };
