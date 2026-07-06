@@ -61,7 +61,7 @@ Body: Geist 400 */
       linear-gradient(160deg, #04060d 0%, #010103 50%, #040b1a 100%);
 
       /* background:radial-gradient(circle at 50% 38%, #1B5FE0 0%, #0F2A63 48%, #081533 88%); */
-    opacity:0;
+    opacity:1;
     transition:opacity .6s ease, transform .9s cubic-bezier(.65,0,.35,1);
     will-change:transform, opacity;
   }
