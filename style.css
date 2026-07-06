@@ -50,6 +50,16 @@ Body: Geist 400 */
     margin: auto;
   }
 
+#body-wrap{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#body-wrap.loaded{
+    visibility: visible;
+    opacity: 1;
+}
+
 
   /* ---------- INTRO PRELOADER ---------- */
   #preloader{
