@@ -137,7 +137,7 @@ stickyHamburger .addEventListener("click", () => {
     // it plays again once the loop comes back around.
     const heroWords = [
       { text: 'Infrastructure',        img: 'assets/hero/infrastructure.avif' },
-      { text: 'Operations',            img: 'assets/hero/operations.jpg' },
+      { text: 'Assessment Operations',            img: 'assets/hero/operations.jpg' },
       { text: 'Security',              img: 'assets/hero/security.avif' },
       { text: 'Software Development',  img: 'assets/hero/software.avif' },
       { text: 'Media & Entertainment', img: 'assets/hero/media.jpg' }
