@@ -1116,8 +1116,8 @@ span.label-sub {
         #ffffff 0%,
         #f7fbff 55%,
         #edf6ff 100%
-    );; border-radius:18px; padding:30px 26px;
-    border:1px solid #E7EDF6; transition:transform .3s ease, box-shadow .3s ease;
+    );; border-radius:30px; padding:30px 26px;
+    border:1px solid #E7EDF6; transition:transform .3s ease, box-shadow .3s ease, border 0.3s ease-in-out;
   }
   .mission-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
   .mission-card .ico{
@@ -1130,6 +1130,13 @@ span.label-sub {
   .mission-card p{font-size:14px; color:var(--slate); line-height:1.6;}
 
 
+.mission-card:hover {
+    border-left: 2px solid var();
+}
+
+.mission-card:hover {
+    border-left: 5px solid var(--blue-bright);
+}
 
 
 
