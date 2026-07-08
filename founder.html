@@ -76,7 +76,7 @@
   /* ---------- Hero ---------- */
   .hero{ position:relative; z-index:1; overflow:hidden; background-color: var(--bg-deep); }
   .hero-grid{
-    display:grid; grid-template-columns:1.15fr 0.85fr; gap:64px; align-items:center;
+    display:grid; grid-template-columns:1.15fr 0.85fr;  align-items:center;
     position:relative; z-index:2;
   }
   .eyebrow{
@@ -122,7 +122,7 @@
 
 
   .portrait-frame{
-    position:relative; width:min(100%, 360px); border-radius:16px;
+    position:relative;  border-radius:16px;
     overflow:hidden; border:1px solid var(--line);
     box-shadow: var(--shadow);
   }
@@ -256,7 +256,7 @@
 
     <header id="siteHeader">
       <nav>
-        <a href="./index.html" class="site-logo">
+        <a href="./index-main.html" class="site-logo">
           <!-- <img src="./abhinnovation-grp-icooon.png" width="50px" />
           <img
             src="./abhi-grp-icon-pre.svg"
@@ -284,7 +284,7 @@
 
     <header id="siteHeader-sticky">
       <nav>
-        <a href="./index.html" class="site-logo">
+        <a href="./index-main.html" class="site-logo">
           <!-- <img src="./abhinnovation-grp-icooon.png" width="50px" />
           <img
             src="./abhi-grp-icon-pre.svg"
@@ -327,7 +327,7 @@
     <div class="portrait-wrap">
       <div>
         <div class="portrait-frame">
-          <img src="founder.jpg" alt="Portrait of Dr. Abhijeet Kumar Shrivastaw">
+          <img src="./assets/team/founder.jpeg" alt="Portrait of Dr. Abhijeet Kumar Shrivastaw">
         </div>
 
       </div>
@@ -434,16 +434,26 @@
       <div class="venture-grid reveal">
         <div class="venture-card">
           <span class="venture-tag">EdTech &amp; Assessment</span>
+          <div class="icon-wrpr">
+                      <img src="./assets/atpl-icon-bg-rm.svg" class="company-logo">
+          </div>
+
           <h3>Abhinnovation Technologies Pvt. Ltd.</h3>
           <p>Secure, scalable online examination and assessment infrastructure for institutions.</p>
         </div>
         <div class="venture-card">
           <span class="venture-tag">IT Solutions</span>
+                    <div class="icon-wrpr">
+                      <img src="./assets/abhi-entertainment-icon-bg-rm.svg" class="company-logo">
+          </div>
           <h3>Tech Q Labs LLP</h3>
           <p>Technology solutions and engineering support across sectors.</p>
         </div>
         <div class="venture-card">
           <span class="venture-tag">Media &amp; Entertainment</span>
+                    <div class="icon-wrpr">
+                      <img src="./assets/tql-icon-bg-rm.svg" class="company-logo">
+          </div>
           <h3>Abhinnovation Media &amp; Entertainment LLP</h3>
           <p>Media, content, and entertainment ventures under the group.</p>
         </div>
@@ -547,9 +557,9 @@
           <h3>More</h3>
           <div class="rule"></div>
           <ul>
-            <li><a href="./founder.html">Our Founder</a></li>
-            <li><a href="./team.html">Our Team</a></li>
-            <li><a href="./awards-recognition.html">Awards &amp; Recognition</a></li>
+            <li><a href="#">Our Founder</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Awards &amp; Recognition</a></li>
           </ul>
         </div>
 
