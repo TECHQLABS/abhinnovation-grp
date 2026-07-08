@@ -184,13 +184,16 @@
   .certs .head p{ color:var(--slate); font-size:16px; line-height:1.65; }
 
   .cert-grid{
-    display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
   }
   .cert{
-    background:var(--white); border:1px solid rgba(11,24,48,0.08); border-radius:16px;
+    background:var(--white); border:1px solid rgba(11,24,48,0.08); border-radius:40px;
     padding:26px 22px; box-shadow:0 10px 26px rgba(8,21,51,0.05);
-    transition:transform .25s ease, box-shadow .25s ease;
+    transition:transform .25s ease, box-shadow .25s ease, border 0.25s ease;
   }
+  .cert:hover {
+    border-left: 5px solid var(--blue);
+}
   .cert:hover{ transform:translateY(-4px); box-shadow:0 18px 36px rgba(8,21,51,0.1); }
   .cert .badge{
     width:42px; height:42px; border-radius:11px; margin-bottom:18px;
@@ -224,10 +227,10 @@
   .cta .wrap{ position:relative; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap; }
   .cta h2{ color:#fff; font-size:clamp(28px,3.4vw,40px); max-width:560px; line-height:1.15; letter-spacing:-0.01em; }
   .cta .actions{ display:flex; gap:14px; flex-wrap:wrap; }
-
+/* 
   footer{
     z-index: -1 !important;
-  }
+  } */
 
   /* ============ RESPONSIVE ============ */
   @media (max-width:900px){
@@ -264,7 +267,7 @@
 
       <header id="siteHeader">
       <nav>
-        <a href="./index.html" class="site-logo">
+        <a href="./index-main.html" class="site-logo">
           <!-- <img src="./abhinnovation-grp-icooon.png" width="50px" />
           <img
             src="./abhi-grp-icon-pre.svg"
@@ -292,7 +295,7 @@
 
     <header id="siteHeader-sticky">
       <nav>
-        <a href="./index.html" class="site-logo">
+        <a href="./index-main.html" class="site-logo">
           <!-- <img src="./abhinnovation-grp-icooon.png" width="50px" />
           <img
             src="./abhi-grp-icon-pre.svg"
@@ -441,25 +444,21 @@
     </div>
     <div class="cert-grid">
       <div class="cert">
-        <div class="badge">IS</div>
-        <h4>Information Security Management</h4>
-        <p>Controls covering data handling, access management and incident response across examination and biometric data.</p>
+        <div class="badge">GST</div>
+        <h4>GST Registration Certificate</h4>
+        <p>Demonstrates legal tax compliance, business authenticity, and regulatory recognition under Indian GST laws.</p>
       </div>
       <div class="cert">
-        <div class="badge">QM</div>
-        <h4>Quality Management System</h4>
-        <p>Documented, audited processes for delivery consistency across centres, cities and client programmes.</p>
+        <div class="badge">UD</div>
+        <h4>Udyam Resgistration Certificate</h4>
+        <p>Government-recognized MSME, reinforcing our commitment to reliable examination and technology services.</p>
       </div>
       <div class="cert">
-        <div class="badge">DP</div>
-        <h4>Data Protection Practices</h4>
-        <p>Handling of candidate and biometric data aligned to applicable data-protection guidance and client contracts.</p>
+        <div class="badge">CI</div>
+        <h4>Certificate of Incorporation</h4>
+        <p>Establishes our legal identity as a registered company under the Companies Act.</p>
       </div>
-      <div class="cert">
-        <div class="badge">BC</div>
-        <h4>Business Continuity Readiness</h4>
-        <p>Contingency planning for exam-day operations, so a single point of failure never becomes a client's problem.</p>
-      </div>
+
     </div>
   </div>
 </section>
@@ -588,8 +587,8 @@
           <div class="rule"></div>
           <ul>
             <li><a href="./founder.html">Our Founder</a></li>
-            <li><a href="./team.html">Our Team</a></li>
-            <li><a href="./awards-recognition.html">Awards &amp; Recognition</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Awards &amp; Recognition</a></li>
           </ul>
         </div>
 
