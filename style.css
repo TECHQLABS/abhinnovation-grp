@@ -1190,7 +1190,7 @@ span.label-sub {
     transition:flex .55s cubic-bezier(.2,.8,.2,1);
     display:flex; align-items:flex-end;
   }
-  .panel.active{flex:3.4;}
+  .panel.active{flex:3.4; cursor:default;}
   .panel-bg{
     position:absolute; inset:0;
     clip-path:polygon(0 0, 100% 0, 100% 78%, 0 100%);
