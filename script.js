@@ -324,13 +324,13 @@ document.querySelectorAll(".panel").forEach(panel => {
 
   const panels = document.querySelectorAll('.panel');
   panels.forEach(p => {
-    p.addEventListener('click', (e) => {
-      const link = e.target.closest('.panel-link');
-      if (link && p.classList.contains('active')) {
-        const href = p.getAttribute('data-href');
-        if (href && href !== '#') window.open(href, '_blank');
-        return;
-      }
+    // p.addEventListener('click', (e) => {
+    //   const link = e.target.closest('.panel-link');
+    //   if (link && p.classList.contains('active')) {
+    //     const href = p.getAttribute('data-href');
+    //     if (href && href !== '#') window.open(href, '_blank');
+    //     return;
+    //   }
       panels.forEach(o => o.classList.remove('active'));
       p.classList.add('active');
     });
