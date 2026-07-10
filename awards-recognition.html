@@ -172,6 +172,15 @@
   }
   .entry .issuer{ display:block; color:var(--text-muted); font-size:13px; margin-top:12px; }
 
+  .entry .view-award{
+        background: none;
+    color: #ffffff;
+    border: none;
+    text-decoration: underline;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
   .ledger-note{
     margin-top:40px; font-size:13px; color:var(--text-muted); border-top:1px solid var(--line);
     padding-top:24px; max-width:640px; line-height:1.6;
@@ -260,6 +269,70 @@
   @media (prefers-reduced-motion:reduce){
     *{ animation:none !important; transition:none !important; }
   }
+
+
+
+
+.award-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-modal-overlay.active {
+  display: flex;
+}
+
+.award-modal {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.award-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.award-modal-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.award-modal-close:hover {
+  background: #eee;
+}
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -284,7 +357,7 @@
           <li><a href="#" class="contact nested">Contact</a></li>
         </ul>
 
-        <a href="./index.html#companies" class="contact">Companies</a>
+        <a href="#companies" class="contact">Companies</a>
 
         <button class="hamburger" aria-label="Toggle Menu">
           <i class="fa-solid fa-bars"></i>
@@ -312,7 +385,7 @@
           <li><a href="#" class="contact nested">Contact</a></li>
         </ul>
 
-        <a href="./index.html#companies" class="contact">Companies</a>
+        <a href="#companies" class="contact">Companies</a>
 
         <button class="hamburger" aria-label="Toggle Menu">
           <i class="fa-solid fa-bars"></i>
@@ -358,9 +431,11 @@
         <div class="card">
           <div>
             <h3>Emerging Tech Leader : Global Apex Awards</h3>
+            
             <p>Given to honour the technical innovations & growth being driven by the company and the founder, recognising the outstanding contributuions, dedication and remarkable achievements.
             </p>
             <span class="issuer">Issuing body &mdash; International education & cultural body</span>
+            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
           </div>
           <span class="tag">Technology</span>
         </div>
@@ -374,6 +449,7 @@
             <h3>Business with an Innovative Concept</h3>
             <p>For demonstrating innovation through unique business models, products, services, or technology-driven solutions. It reflects the company's commitment to delivering impactful, forward-thinking solutions that address evolving industry and customer needs.</p>
             <span class="issuer">Issuing body &mdash; Business In Bihar</span>
+            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
           </div>
           <span class="tag">Enterprise</span>
         </div>
@@ -387,6 +463,7 @@
             <h3>National Visionary Leaders</h3>
             <p>Presented for strong vision and creating business opportunity in state of Bihar</p>
             <span class="issuer">Issuing body &mdash; Business In Bihar</span>
+            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
           </div>
           <span class="tag">Enterprise</span>
         </div>
@@ -400,6 +477,7 @@
             <h3>Indian Glory Awards</h3>
             <p>In recognition of your outstanding contributions, dedication& remarkable achievements in your specialized domain, you have been honoured with this award</p>
             <span class="issuer">Issuing body &mdash; Global Chamber of Consumer Rights & </span>
+            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
           </div>
           <span class="tag">Infrastructure</span>
         </div>
@@ -413,6 +491,7 @@
             <h3>Most Innovative Ed tech Startup</h3>
             <p>In recognition of your outstanding achievements at Asian Excellence Awards Ceremony took place on 30TH NOVEMBER 2024 at Hotel Lemontree, Sector-60, Gurugram.</p>
             <span class="issuer">Issuing body &mdash; Kiteskraft Productions LLP & Global Chamber of Consumer Rights</span>
+            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
           </div>
           <span class="tag">R&D</span>
         </div>
@@ -565,7 +644,7 @@
           <h3>Our companies</h3>
           <div class="rule"></div>
           <ul>
-            <li><a href="https://www.abhinnovation.com/">Abhinnovation Technologies</a></li>
+            <li><a href="#">Abhinnovation Technologies</a></li>
             <li><a href="#">Abhinnovation Media &amp; Entertainment</a></li>
             <li><a href="#">Tech Q Labs</a></li>
           </ul>
@@ -576,8 +655,8 @@
           <div class="rule"></div>
           <ul>
             <li><a href="./founder.html">Our Founder</a></li>
-            <li><a href="./team.html">Our Team</a></li>
-            <li><a href="./awards-recognition.html">Awards &amp; Recognition</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Awards &amp; Recognition</a></li>
           </ul>
         </div>
 
@@ -596,8 +675,45 @@
 
 
 
+  <div class="award-modal-overlay" id="awardModalOverlay">
+  <div class="award-modal">
+    <button class="award-modal-close" id="awardModalClose" aria-label="Close">&times;</button>
+    <img src="" alt="Award" id="awardModalImg">
+  </div>
+</div>
+
+
 
   <script src="./header.js"></script>
+  <script>
+
+  const overlay = document.getElementById('awardModalOverlay');
+  const modalImg = document.getElementById('awardModalImg');
+  const closeBtn = document.getElementById('awardModalClose');
+
+  document.querySelectorAll('.view-award').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const imgSrc = btn.getAttribute('data-img');
+      if (!imgSrc) return;
+      modalImg.src = imgSrc;
+      overlay.classList.add('active');
+    });
+  });
+
+  function closeModal() {
+    overlay.classList.remove('active');
+    modalImg.src = '';
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+
+
+  </script>
 
 </body>
 </html>
