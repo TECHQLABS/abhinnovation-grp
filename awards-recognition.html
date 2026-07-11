@@ -177,7 +177,7 @@
     color: #ffffff;
     border: none;
     text-decoration: underline;
-    margin-top: 5px;
+    margin-top: 10px;
     cursor: pointer;
   }
 
@@ -199,6 +199,11 @@
     background:var(--white); border:1px solid rgba(11,24,48,0.08); border-radius:40px;
     padding:26px 22px; box-shadow:0 10px 26px rgba(8,21,51,0.05);
     transition:transform .25s ease, box-shadow .25s ease, border 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
   }
   .cert:hover {
     border-left: 5px solid var(--blue);
@@ -211,6 +216,15 @@
   }
   .cert h4{ font-size:15.5px; color:var(--navy-deep); margin-bottom:8px; line-height:1.35; }
   .cert p{ font-size:13.2px; color:var(--slate); line-height:1.55; }
+
+  .cert .view-award{
+        background: none;
+    color: #414141;
+    border: none;
+    text-decoration: underline;
+    margin-top: 5px;
+    cursor: pointer;
+  }
 
   /* ============ STATS BAND ============ */
   .stats-band{
@@ -435,9 +449,44 @@
             <p>Given to honour the technical innovations & growth being driven by the company and the founder, recognising the outstanding contributuions, dedication and remarkable achievements.
             </p>
             <span class="issuer">Issuing body &mdash; International education & cultural body</span>
-            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
+            <button class="view-award" data-img="./assets/awards/emerging-tech-leader.png" >View Award</button>
           </div>
           <span class="tag">Technology</span>
+        </div>
+      </div>
+
+
+
+      <div class="entry">
+        <span class="year">2025</span>
+        <div class="dot"></div>
+        <div class="card">
+          <div>
+            <h3>National Spotlight: Featured in Forbes India’s Special Edition</h3>
+            
+            <p>We are proud to share that our founder, Dr. Abhijeet Kumar Shrivastaw, was featured in the January 2025 edition of Forbes India. As part of the "Discover Some Inspiring and Influential Personalities" section, he is recognized for his contributions to educational innovation, biometric assessments, and his dedication to transforming lives through visionary initiatives.
+            </p>
+            <span class="issuer">Issuing body &mdash; Forbes India</span>
+            <button class="view-award" data-img="./assets/awards/yellow-forbes.jpg" >View Story</button>
+          </div>
+          <span class="tag">Media Recognition</span>
+        </div>
+      </div>
+
+
+      <div class="entry">
+        <span class="year">2025</span>
+        <div class="dot"></div>
+        <div class="card">
+          <div>
+            <h3>Media Feature: Recognized in India Today’s Special Edition</h3>
+            
+            <p>We are proud to share that our founder, Dr. Abhijeet Kumar Shrivastaw, has been featured in the September 1, 2025, Independence Day Special edition of India Today. As part of the "Stories That Defined Success & Inspiration" feature, he is recognized for his visionary leadership, his pioneering work at Abhinnovation Technologies and Tech Q Labs, and his commitment to combining corporate leadership with philanthropic efforts.
+            </p>
+            <span class="issuer">Issuing body &mdash; India Today</span>
+            <button class="view-award" data-img="./assets/awards/india-today.png" >View Story</button>
+          </div>
+          <span class="tag">Media Recognition</span>
         </div>
       </div>
 
@@ -449,7 +498,7 @@
             <h3>Business with an Innovative Concept</h3>
             <p>For demonstrating innovation through unique business models, products, services, or technology-driven solutions. It reflects the company's commitment to delivering impactful, forward-thinking solutions that address evolving industry and customer needs.</p>
             <span class="issuer">Issuing body &mdash; Business In Bihar</span>
-            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
+            <button class="view-award" data-img="./assets/awards/innovative-concept.jpeg" >View Award</button>
           </div>
           <span class="tag">Enterprise</span>
         </div>
@@ -463,9 +512,43 @@
             <h3>National Visionary Leaders</h3>
             <p>Presented for strong vision and creating business opportunity in state of Bihar</p>
             <span class="issuer">Issuing body &mdash; Business In Bihar</span>
-            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
+            <button class="view-award" data-img="./assets/awards/bib.jpeg" >View Award</button>
           </div>
           <span class="tag">Enterprise</span>
+        </div>
+      </div>
+      <div class="entry">
+        <span class="year">2024</span>
+        <div class="dot"></div>
+        <div class="card">
+          <div>
+            <h3>National Spotlight: Featured in Forbes India’s Special Edition
+</h3>
+            <p>We are honored to share that our founder, Dr. Abhijeet Kumar Shrivastaw, has been featured in Forbes India. In a special editorial titled "Trailblazers of Modern India," Dr. Shrivastaw is recognized for his visionary leadership, his foundational role in establishing Abhinnovation Technologies and Tech Q Labs, and his ongoing commitment to transforming the educational technology landscape.</p>
+            <span class="issuer">Issuing body &mdash; Forbes India</span>
+            <button class="view-award" data-img="./assets/awards/forbes-blue.png" >View Story</button>
+          </div>
+          <span class="tag">Media Recognition</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <span class="year">2024</span>
+        <div class="dot"></div>
+        <div class="card">
+          <div>
+            <h3>Industry Recognition: Our Founder’s Cover Story in Fames India</h3>
+            <p>Here are updated, concise options for your company page:
+Suggested Heading Options
+Founder Spotlight: Cover Story & Feature Interview
+A Visionary Leader: Featured on the Cover of Fames India
+Industry Recognition: Our Founder’s Cover Story Feature
+About the Recognition
+Our founder, Dr. Abhijeet Kumar Shrivastaw, was recently featured on the cover and in a dedicated article of the Fames India magazine. This honor, presented by the International Eminence Awards, recognizes his pioneering work in educational technology and his commitment to driving societal progress through both innovation and philanthropy.</p>
+            <span class="issuer">Issuing body &mdash; Fames India</span>
+            <button class="view-award" data-img="./assets/awards/fames-india.png" >View Story</button>
+          </div>
+          <span class="tag">Media Recognition</span>
         </div>
       </div>
 
@@ -477,7 +560,7 @@
             <h3>Indian Glory Awards</h3>
             <p>In recognition of your outstanding contributions, dedication& remarkable achievements in your specialized domain, you have been honoured with this award</p>
             <span class="issuer">Issuing body &mdash; Global Chamber of Consumer Rights & </span>
-            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
+            <button class="view-award" data-img="./assets/awards/indian-glory.jpeg" >View Award</button>
           </div>
           <span class="tag">Infrastructure</span>
         </div>
@@ -491,9 +574,24 @@
             <h3>Most Innovative Ed tech Startup</h3>
             <p>In recognition of your outstanding achievements at Asian Excellence Awards Ceremony took place on 30TH NOVEMBER 2024 at Hotel Lemontree, Sector-60, Gurugram.</p>
             <span class="issuer">Issuing body &mdash; Kiteskraft Productions LLP & Global Chamber of Consumer Rights</span>
-            <button class="view-award" data-img="./assets/team/suchita.jpeg" >View Award</button>
+            <button class="view-award" data-img="./assets/awards/most innovative edtech.jpeg" >View Award</button>
           </div>
           <span class="tag">R&D</span>
+        </div>
+      </div>
+
+
+      <div class="entry">
+        <span class="year">2024</span>
+        <div class="dot"></div>
+        <div class="card">
+          <div>
+            <h3>Top 10 Rising Personalities of India</h3>
+            <p>In recognition of spirit and Entrepreneurial vision of our founder Dr Abjiheet Kumar Srivastava that is making real difference in society and business community.</p>
+            <span class="issuer">Issuing body &mdash; Kiteskraft Productions LLP</span>
+            <button class="view-award" data-img="./assets/awards/top-10-rising-personalities.png" >View Award</button>
+          </div>
+          <span class="tag">Enterprise</span>
         </div>
       </div>
 
@@ -512,19 +610,28 @@
     </div>
     <div class="cert-grid">
       <div class="cert">
+        <div>
         <div class="badge">GST</div>
         <h4>GST Registration Certificate</h4>
         <p>Demonstrates legal tax compliance, business authenticity, and regulatory recognition under Indian GST laws.</p>
+        </div>
+        <button class="view-award certificate" data-img="./assets/awards/gst.jpeg" >View Certificate</button>
       </div>
       <div class="cert">
+        <div>
         <div class="badge">UD</div>
         <h4>Udyam Resgistration Certificate</h4>
         <p>Government-recognized MSME, reinforcing our commitment to reliable examination and technology services.</p>
+        </div>
+        <button class="view-award certificate" data-img="./assets/awards/udyam.jpeg" >View Certificate</button>
       </div>
       <div class="cert">
+        <div>
         <div class="badge">CI</div>
         <h4>Certificate of Incorporation</h4>
         <p>Establishes our legal identity as a registered company under the Companies Act.</p>
+        </div>
+        <button class="view-award certificate" data-img="./assets/awards/incorporation-certificate.jpeg" >View Certificate</button>
       </div>
 
     </div>
