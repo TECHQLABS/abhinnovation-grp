@@ -9,6 +9,7 @@
     const fillEl = document.getElementById('loadingFill');
     const counterEl = document.getElementById('preloadCounter');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const homeBody = document.querySelector("body.home");
 
     const finish = () => {
       document.getElementById("body-wrap").classList.add("loaded");
@@ -69,7 +70,11 @@
 
     // requestAnimationFrame(() => preloader.classList.add('show'));
 
-    setTimeout(() => preloader.classList.add('liftoff'), liftoffStart);
+    setTimeout(() => { 
+      preloader.classList.add('liftoff');
+      homeBody.style.overflowY = "auto";
+
+    }, liftoffStart);
     setTimeout(finish, liftoffStart + liftoffDuration);
   })();
 
