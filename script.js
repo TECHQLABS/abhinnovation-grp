@@ -1,6 +1,17 @@
 
 //   document.getElementById('year').textContent = new Date().getFullYear();
 
+const shouldSkip = sessionStorage.getItem("skipPreloader");
+
+if (shouldSkip) {
+  sessionStorage.removeItem("skipPreloader");
+
+  // Hide preloader immediately
+  document.querySelector("#preloader").remove();
+} 
+
+else{
+
   (function runIntro(){
     const preloader = document.getElementById('preloader');
     const titleEl = document.getElementById('preloadTitle');
@@ -77,6 +88,8 @@
     }, liftoffStart);
     setTimeout(finish, liftoffStart + liftoffDuration);
   })();
+
+}
 
 
   //hamburger
