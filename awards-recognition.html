@@ -819,7 +819,17 @@ Our founder, Dr. Abhijeet Kumar Shrivastaw, was recently featured on the cover a
     if (e.target === overlay) closeModal();
   });
 
+// pre-loading images
 
+   // Preload all popup images
+document.querySelectorAll(".view-award").forEach(button => {
+  const imgSrc = button.dataset.img;
+
+  if (imgSrc) {
+    const img = new Image();
+    img.src = imgSrc;
+  }
+});
 
   </script>
 
