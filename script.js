@@ -1,5 +1,5 @@
 
-//   document.getElementById('year').textContent = new Date().getFullYear();
+  // document.getElementById('year').textContent = new Date().getFullYear();
 
 const shouldSkip = sessionStorage.getItem("skipPreloader");
 
