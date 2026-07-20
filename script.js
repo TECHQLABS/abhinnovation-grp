@@ -1,6 +1,6 @@
 
   // document.getElementById('year').textContent = new Date().getFullYear();
-
+const homeBody = document.querySelector("body.home");
 const shouldSkip = sessionStorage.getItem("skipPreloader");
 
 if (shouldSkip) {
@@ -8,6 +8,7 @@ if (shouldSkip) {
 
   // Hide preloader immediately
   document.querySelector("#preloader").remove();
+  homeBody.style.overflowY = "auto";
 } 
 
 else{
@@ -20,7 +21,7 @@ else{
     const fillEl = document.getElementById('loadingFill');
     const counterEl = document.getElementById('preloadCounter');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const homeBody = document.querySelector("body.home");
+    // const homeBody = document.querySelector("body.home");
 
     const finish = () => {
       document.getElementById("body-wrap").classList.add("loaded");
